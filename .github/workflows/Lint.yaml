@@ -32,6 +32,7 @@ jobs:
         with:
           sarif_file: semgrep.sarif
         if: always()
+
   hadolint:
     name: "Hadolint scan"
     runs-on: ubuntu-latest
