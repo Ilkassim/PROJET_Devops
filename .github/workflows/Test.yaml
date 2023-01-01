@@ -1,12 +1,9 @@
-name: Test_appli
+name: Go
 
 on: [push]
 
 jobs:
-  test_unitaire:
-    name: test
-  
-
+  build:
 
     runs-on: ubuntu-latest
     strategy:
@@ -20,5 +17,7 @@ jobs:
         with:
           go-version: ${{ matrix.go-version }}
       # You can test your matrix by printing the current Go version
-      - name: test
-        run: test -v ./...
+      - name: Install dependencies
+        run: go get .
+      - name: Test with the Go CLI
+        run: go test ./..
