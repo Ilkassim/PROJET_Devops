@@ -1,4 +1,4 @@
-name: ReleaseWorkflows
+name: Exercice1
 on:
   push:
     tags:

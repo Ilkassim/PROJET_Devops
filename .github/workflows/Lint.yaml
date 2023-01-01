@@ -1,12 +1,11 @@
 name: exercice2
 on:
   pull_request:
-    branches: [master, main]
+    branches: 
+      - main
   push:
     branches:
       - main
-
-
 jobs:
   semgrep:
     name: Semgrep
