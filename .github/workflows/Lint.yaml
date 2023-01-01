@@ -1,6 +1,6 @@
 name: sempgrep
 on:
-  # push:
+  push:
   workflow_dispatch:
 
 jobs:
